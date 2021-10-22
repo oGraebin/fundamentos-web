@@ -1,50 +1,125 @@
-body{
-    
-    background-image: linear-gradient(#000000,#270000, #000000);
+body {
+    background-image: linear-gradient(#000000,#000000,#000000, #6b1010,#000000,#000000, #000000);
 }
 
-h1{
-    color: #dd0000;
-   background-color: #000000;
-    text-align: center;
-    font-size: 50px;
-    margin: 0;
-    margin-top: 0;
-}
-#menu{
-   
-}
+
+
+#menu {}
 
 #menu li {
-    display:inline;
+    display: inline;
     align-items: center;
-
-    }
+}
 
 #menu li a {
-    text-decoration:none;
-    color: #ff0000;
+    text-decoration: none;
+    color: #ffffff;
     font-size: 17px;
- }
+}
 
- #menu li a:hover {
-    color: #ffee00;
- }
+#menu li a:hover {
+    color: #ff0000;
+}
 
- .header{
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-between;
-     background-image: radial-gradient(#130000, #000000);
- }
-
-.corpo{
+.topo {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: radial-gradient( #130000, #000000);
+}
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+}
+.corpo {
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
 }
 
-.objeto{
-   margin-top: 3px;
-   margin-right: 3px;
+.tamanhoTopo {
+    height: 30px;
+    width: 300px;
+}
+
+h2 {
+    font-family: "Lucida Console";
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h3 {
+    font-family: "Lucida Console";
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+p {
+    font-family: "Lucida Console";
+    color: #ffffff;
+    font-size: 12px;
+    
+
+}
+.imagens-personagens{
+    width: auto;
+    height: auto;
+    border-radius: 20%;
+}
+
+.personagem{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap row;
+    width: fit-content;
+
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+
+.logo{
+    height: 130px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.copyright{
+    color: #ffffff;
+    height: 30px;
+}
+.logos-redes{
+    height: 30px;    
+}
+
+.redes{
+    padding-left: 50px;
+}
+
+.texto-form{
+    font-family: "Lucida Console";
+    color: #ffffff;
+    background-color: #000000;   
+}
+
+
+
+.form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+
 }

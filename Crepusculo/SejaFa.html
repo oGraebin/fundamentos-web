@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>CREPUSCULO</title>
+</head>
+
+<body>
+    <div class="topo">
+        <div class="lado-direito">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Página inicial</a>
+                </li>
+                <li><a>|</a></li>
+                <li>
+                    <a href="SejaFa.html">Seja um Fã</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <a href="index.html">
+            <img src="assets/img/Logobranco.png" alt="Logo" class="logo">
+        </a>
+
+        <iframe src="https://open.spotify.com/embed/playlist/0IfU77AQA22Xx0Spn0iPrt?utm_source=generator&amp;theme=0"
+            width="20%" height="80" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <hr>
+
+    <div class="formulario">
+        <div>
+            <form class="form">
+                <label for="nome" class="texto-form">Nome:</label> 
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome' ></div>
+                <br>
+                <label for="email" class="texto-form">E-mail:</label> 
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
+                <br>
+                <label for="nascimento" class="texto-form">Ano de nascimento:</label> 
+                <input type="number" id="nascimento">
+                <div id='txtNascimento'></div>
+                <br>
+
+                <label for="escolha" class="texto-form">Com quem Bella deve ficar?:</label>
+                <input list="escolhas" name="escolha" id="escolha">
+
+                <datalist id="escolhas">
+                  <option value="Edward Cullen">
+                  <option value="Jacob Black">
+                  <option value="Alice Cullen">
+                  <option value="Ninguém">
+                </datalist>
+              
+
+                <br>
+                <label for="assunto" class="texto-form">Assunto:</label> 
+                <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <hr>
+    <footer>
+        <div class="rodape">
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/felipe-graebin/">
+                    <img src="assets/img/linkedin.png" alt="Linkedin" class="logos-redes">
+                </a>
+                <a href="https://github.com/oGraebin">
+                    <img src="assets/img/github.png" alt="Github" class="logos-redes">
+                </a>
+                <a href="https://www.instagram.com/ograebin/">
+                    <img src="assets/img/instagram.png" alt="Instagram" class="logos-redes">
+                </a>
+            </div>
+            <a class="copyright"> Todos os direitos reservados&copy </a>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
